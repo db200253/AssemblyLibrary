@@ -71,7 +71,7 @@ void		ft_check_strlen(void)
 	printf("\033[36mresultat : libc\033[00m\n");
 	printf("|%zd|\n\n", strlen("test"));
 }
-/*
+
 void		ft_check_strcmp(void)
 {
 	char	strcmp1[] = "";
@@ -91,7 +91,7 @@ void		ft_check_strcmp(void)
 	printf("return : [%d]\n", ft_strcmp(strcmp2, strcmp1));
 	printf("\033[36mresultat : libc\033[00m\n");
 	printf("return : [%d]\n\n", strcmp(strcmp2, strcmp1));
-}*/
+}
 
 void		ft_check_strcpy(void)
 {
@@ -156,8 +156,7 @@ int			main(void)
 	ft_check_read();*/
 	
 	ft_check_strcpy();
-	/*
-	ft_check_strcmp();
+	ft_check_strcmp();/*
 	ft_check_strdup();*/
 	return (0);
 }	
