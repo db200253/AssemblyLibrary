@@ -19,7 +19,7 @@ void		ft_check_write(void)
 	printf("\nreturn : [%zd]\n\n", write(1, "", 1));
 
 }
-/*
+
 void		ft_check_read(void)
 {
 	ssize_t		ret_read;
@@ -51,7 +51,7 @@ void		ft_check_read(void)
 	buf[ret_read] = '\0';
 	printf("|%s|\nreturn : [%zd]\n\n", buf, ret_read);
 	close(fd);
-}*/
+}
 
 void		ft_check_strlen(void)
 {
@@ -152,9 +152,8 @@ void		ft_check_strdup(void)
 int			main(void)
 {	
 	ft_check_strlen();
-	ft_check_write();/*
-	ft_check_read();*/
-	
+	ft_check_write();
+	ft_check_read();
 	ft_check_strcpy();
 	ft_check_strcmp();/*
 	ft_check_strdup();*/
