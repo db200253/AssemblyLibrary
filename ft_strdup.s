@@ -11,7 +11,7 @@ ft_strdup:
     call malloc
     test %rax, %rax                 
     je failed                   #if rax = null -> failed
-    pop %rsi                    #get rsi out of the stack
+    pop %rsi                    #get str out of the stack and put it in rsi
     mov %rax, %rdi              #get the allocated memory in rdi
     call ft_strcpy              #copy then return
     ret 
