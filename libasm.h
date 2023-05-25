@@ -13,5 +13,6 @@ int ft_strcmp(const char * str1, const char * str2);
 int ft_write(int fd, const void * buf, int count);
 int ft_read(int fd, const void * buf, int count);
 char * ft_strdup(char * src);
+int ft_atoi(char * src);
 
 #endif
