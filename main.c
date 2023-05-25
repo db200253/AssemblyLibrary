@@ -126,7 +126,7 @@ void		ft_check_strcpy(void)
 	printf("\033[36mresultat : libc\033[00m\n");
 	printf("return : |%s|\n\n", strcpy(str7, str6));
 }
-/*
+
 void		ft_check_strdup(void)
 {
 	char	dup[] = "New Malloc";
@@ -147,7 +147,7 @@ void		ft_check_strdup(void)
 	printf("return : |%s|\n", ft_strdup(dup2));
 	printf("\033[36mresultat : libc\033[00m\n");
 	printf("return : |%s|\n\n", strdup(dup2));
-}*/
+}
 
 int			main(void)
 {	
@@ -155,7 +155,7 @@ int			main(void)
 	ft_check_write();
 	ft_check_read();
 	ft_check_strcpy();
-	ft_check_strcmp();/*
-	ft_check_strdup();*/
+	ft_check_strcmp();
+	ft_check_strdup();
 	return (0);
 }	
