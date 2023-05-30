@@ -8,7 +8,7 @@
 #ifndef MATH_H
 #define MATH_H
 
-double ft_pow(int nbre, int puissance);
+double ft_pow(double nbre, int puissance);
 double ft_min(double n1, double n2);
 double ft_max(double n1, double n2);
 

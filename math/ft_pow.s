@@ -1,22 +1,21 @@
-.globl ft_pow
+.global ft_pow
 
 ft_pow:
-    mov %rdi, %rax        
-    mov %rsi, %rcx         
-    cmp $0, %rcx        
-    je base             
-    mov $1, %rdx         
+	mov $1, %rbx
+	push %rbx
+	cmp $0, %rsi
+	je exit
+	jmp loop
 
 loop:
-    cmp $1, %rcx       
-    je exit                
-    imul %rax, %rdi      
-    dec %rcx               
-    jmp loop             
-
-base:
-    mov $1, %rax          
-    ret
+	pop %rbx
+	imul %rdi, %rbx
+	push %rbx
+	dec %rsi
+	cmp $0, %rsi
+	je exit
+	jmp loop
 
 exit:
-    ret
+	pop %rax
+	ret
